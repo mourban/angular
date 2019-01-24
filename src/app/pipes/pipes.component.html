@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-12">
+    <h3>Listado de Información:</h3>
+    <ul>
+      <li *ngFor="let dato of informacion">
+        <h5>{{ dato.nombre | titlecase }} | {{ dato.apellido }} | {{ dato.sueldo | number:"3.1" }}</h5>
+        <p>{{ dato.texto | slice:0:20 }}...</p>
+        <p>{{ dato.nombre | formatoNombre:dato.apellido }}...</p>
+      </li>
+    </ul>
+    {{ informacion | json }}
+  </div>
+</div>

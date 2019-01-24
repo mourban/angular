@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-12">
+    <h3>Opciones de Ruta:</h3>
+    <ul>
+      <li>
+        <h4><a [routerLink]="['/']">Abrir Home</a></h4>
+      </li>
+      <li>
+        <h4><a [routerLink]="['/component1']">Opción Componente 1</a></h4>
+      </li>
+      <li>
+        <h4><a [routerLink]="['/component2']">Opción Componente 2</a></h4>
+      </li>
+      <li>
+        <h4><a [routerLink]="['/componentOtro']">Opción Componente Otro</a></h4>
+      </li>
+      <li>
+        <h4><a [routerLink]="['/component2', 2019]">Pasar un parametro</a></h4>
+      </li>
+      <li>
+        <h4><a [routerLink]="['/component2', 200, 2103]">Pasar dos parametros</a></h4>
+      </li>
+    </ul>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
