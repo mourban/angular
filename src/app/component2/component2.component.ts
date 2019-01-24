@@ -17,6 +17,7 @@ export class Component2Component implements OnInit {
     this.route.params.subscribe( params => {
       if (params["id"] != null){
         console.log('llego el parametro id:' + params["id"]);
+        console.log('Este es un cambio para git');
       }
     });
 
